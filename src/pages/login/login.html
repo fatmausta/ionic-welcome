@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+	<ion-list>
+
+  <ion-item>
+    <ion-label fixed>Username</ion-label>
+    <ion-input type="text" [(ngModel)] = "user.email" value=""></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>Password</ion-label>
+    <ion-input type="password" [(ngModel)] = "user.password" ></ion-input>
+  </ion-item>
+
+</ion-list>
+<button ion-button full (click)="login(user)">Login</button>
+<ion-textarea> Enter the credentials </ion-textarea>
+  <ion-input type="text" [(ngModel)] = "message" value="Enter credentials"></ion-input>
+
+</ion-content>
+
+
+
